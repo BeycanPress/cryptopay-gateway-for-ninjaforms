@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Ninja Forms - CryptoPay Gateway\n"
+"Project-Id-Version: CryptoPay Gateway for Ninja Forms\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-24 02:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -39,7 +39,7 @@ msgid "https://beycanpress.com/cryptopay/"
 msgstr ""
 
 #. Name of the plugin
-msgid "Ninja Forms - CryptoPay Gateway"
+msgid "CryptoPay Gateway for Ninja Forms"
 msgstr ""
 
 #: app/Loader.php:21
