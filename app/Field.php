@@ -88,6 +88,8 @@ class Field extends \NF_Abstracts_Field
             'include' => [
                 'calcs'
             ],
+            /* phpcs:ignore WordPressVIPMinimum.Performance.WPQueryParams.PostNotIn_exclude */
+            // this is not a query
             'exclude' => [
                 'form',
                 'fields',
