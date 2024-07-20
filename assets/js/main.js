@@ -7,7 +7,6 @@
         } = ninja_forms_field_cryptopay;
         const helpers = window.cpHelpers || window.cplHelpers
         const app = window.CryptoPayApp || window.CryptoPayLiteApp
-        const modal = window.CryptoPayModal || window.CryptoPayLiteModal
 
         const order = {}
         const params = {}
@@ -29,7 +28,7 @@
         }
 
         app.events.add('confirmationCompleted', async ({transaction}) => {
-            modal.close();
+            app.modal.close();
             notPaidYet = false;
             helpers.closePopup();
             await helpers.sleep(100);
@@ -72,6 +71,7 @@
                 const form = getFormById(params.formId);
                 order.amount = parseFloat(model.attributes.value);
                 order.currency = form.get('settings').currency;
+                order.currency = order.currency ? order.currency : 'USD';
                 
                 if (startedApp) {
                     startedApp.reStart(order, params);
@@ -81,7 +81,7 @@
             },
             maybeSubmit: function(event) {
                 if (notPaidYet && this.checkError(event)) {
-                    modal.open();
+                    app.modal.open();
                     return false;
                 }
                 return true;

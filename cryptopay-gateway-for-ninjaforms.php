@@ -19,9 +19,9 @@ defined('ABSPATH') || exit;
  * License:     GPLv3
  * License URI: https://www.gnu.org/licenses/gpl-3.0.html
  * Text Domain: ninjaforms-cryptopay
- * Tags: Cryptopay, Cryptocurrency, WooCommerce, WordPress, MetaMask, Trust, Binance, Wallet, Ethereum, Bitcoin, Binance smart chain, Payment, Plugin, Gateway, Moralis, Converter, API, coin market cap, CMC
+ * Tags: Bitcoin, Ethereum, Crypto, Payment, Ninja Forms
  * Requires at least: 5.0
- * Tested up to: 6.5.0
+ * Tested up to: 6.6
  * Requires PHP: 8.1
 */
 
@@ -37,15 +37,27 @@ define('NINJA_FORMS_CRYPTOPAY_SLUG', plugin_basename(__FILE__));
 
 use BeycanPress\CryptoPay\Integrator\Helpers;
 
-Helpers::registerModel(BeycanPress\CryptoPay\NinjaForms\Models\TransactionsPro::class);
-Helpers::registerLiteModel(BeycanPress\CryptoPay\NinjaForms\Models\TransactionsLite::class);
+/**
+ * @return void
+ */
+function nfCryptoPayRegisterModels(): void
+{
+    Helpers::registerModel(BeycanPress\CryptoPay\NinjaForms\Models\TransactionsPro::class);
+    Helpers::registerLiteModel(BeycanPress\CryptoPay\NinjaForms\Models\TransactionsLite::class);
+}
+
+nfCryptoPayRegisterModels();
 
 load_plugin_textdomain('ninjaforms-cryptopay', false, basename(__DIR__) . '/languages');
 
-if (!class_exists('Ninja_Forms')) {
-    Helpers::requirePluginMessage('Ninja Forms', 'https://wordpress.org/plugins/ninja-forms/');
-} elseif (Helpers::bothExists()) {
-    new BeycanPress\CryptoPay\NinjaForms\Loader();
-} else {
-    Helpers::requireCryptoPayMessage('Ninja Forms');
-}
+add_action('plugins_loaded', function (): void {
+    nfCryptoPayRegisterModels();
+
+    if (!class_exists('Ninja_Forms')) {
+        Helpers::requirePluginMessage('Ninja Forms', 'https://wordpress.org/plugins/ninja-forms/');
+    } elseif (Helpers::bothExists()) {
+        new BeycanPress\CryptoPay\NinjaForms\Loader();
+    } else {
+        Helpers::requireCryptoPayMessage('Ninja Forms');
+    }
+});

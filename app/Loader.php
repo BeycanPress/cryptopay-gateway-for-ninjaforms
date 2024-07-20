@@ -26,11 +26,21 @@ class Loader
         );
 
         Hook::addAction('payment_finished_ninjaforms', [$this, 'paymentFinished']);
+        Hook::addFilter('edit_config_data_ninjaforms', [$this, 'disableReminderEmail']);
         Hook::addFilter('payment_redirect_urls_ninjaforms', [$this, 'paymentRedirectUrls']);
 
         add_filter('ninja_forms_register_fields', [$this, 'registerFields']);
         add_filter('ninja_forms_field_template_file_paths', [$this, 'addTemplatePath']);
         //add_filter('ninja_forms_register_payment_gateways', [$this, 'registerGateways']);
+    }
+
+    /**
+     * @param object $data
+     * @return object
+     */
+    public function disableReminderEmail(object $data): object
+    {
+        return $data->disableReminderEmail();
     }
 
     /**
