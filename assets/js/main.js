@@ -27,16 +27,15 @@
             nfRadio.channel('form-' + formId).request('add:extra', key, value);
         }
 
-        app.events.add('confirmationCompleted', async ({transaction}) => {
+        app.events.add('confirmationCompleted', async (ctx) => {
             app.modal.close();
             notPaidYet = false;
-            helpers.closePopup();
-            await helpers.sleep(100);
+            ctx.disablePopup = true;
             $('.overlay').remove();
             addExtraData(
                 params.formId,
                 'cryptopay_transaction_hash',
-                transaction.id || transaction.hash
+                ctx.transaction.id || ctx.transaction.hash
             );
             helpers.successPopup(paymentCompletedMessage)
             submitForm(params.formId);
