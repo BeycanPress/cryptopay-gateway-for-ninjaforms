@@ -31,7 +31,7 @@ See **<a href="https://cryptopay.beycanpress.net/" target="_blank">Demo</a>**
 ![Screenshot-5](https://i.ibb.co/CJzZKfz/Screenshot-5.png)
 
 * Enter the total value set in the calculation in the default value section of the field alerts
-![Screenshot-8](https://i.ibb.co/7J1vJ2v/Screenshot-8.png)
-![Screenshot-9](https://i.ibb.co/7J1vJ2v/Screenshot-9.png)
+![Screenshot-6](https://i.ibb.co/Bq47ymD/Screenshot-6.png)
+![Screenshot-7](https://i.ibb.co/KXmjLsw/Screenshot-7.png)
 
 * That's it, now you are ready to receive cryptocurrency payments from your form.
