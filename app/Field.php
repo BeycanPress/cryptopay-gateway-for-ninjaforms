@@ -88,8 +88,8 @@ class Field extends \NF_Abstracts_Field
             'include' => [
                 'calcs'
             ],
-            /* phpcs:ignore WordPressVIPMinimum.Performance.WPQueryParams.PostNotIn_exclude */
             // this is not a query
+            /* phpcs:ignore WordPressVIPMinimum.Performance.WPQueryParams.PostNotIn_exclude */
             'exclude' => [
                 'form',
                 'fields',
@@ -146,8 +146,8 @@ class Field extends \NF_Abstracts_Field
                 'ninja_forms_field_cryptopay',
                 [
                     'paidTransaction' => $paidTransaction,
-                    'alreadyPaidMessage' => esc_html__('A payment has already been made for this form, but the form has not been sent. Therefore please only submit the form.', 'ninjaforms-cryptopay'), // phpcs:ignore
-                    'paymentCompletedMessage' => esc_html__('Payment completed successfully.', 'ninjaforms-cryptopay')
+                    'alreadyPaidMessage' => esc_html__('A payment has already been made for this form, but the form has not been sent. Therefore please only submit the form.', 'cryptopay-gateway-for-ninjaforms'), // phpcs:ignore
+                    'paymentCompletedMessage' => esc_html__('Payment completed successfully.', 'cryptopay-gateway-for-ninjaforms') // phpcs:ignore
                 ]
             );
         });
@@ -169,7 +169,7 @@ class Field extends \NF_Abstracts_Field
 
         $message = esc_html__(
             'Payment is not verified. Sending form has been aborted.',
-            'ninjaforms-cryptopay'
+            'cryptopay-gateway-for-ninjaforms'
         );
 
         $transactionHash = $data['extra']['cryptopay_transaction_hash'] ?? '';

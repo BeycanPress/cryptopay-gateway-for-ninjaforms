@@ -18,7 +18,7 @@ class Loader
         Helpers::registerIntegration('ninjaforms');
 
         Helpers::createTransactionPage(
-            esc_html__('Ninja Forms Transactions', 'ninjaforms-cryptopay'),
+            esc_html__('Ninja Forms Transactions', 'cryptopay-gateway-for-ninjaforms'),
             'ninjaforms',
             10,
             [],

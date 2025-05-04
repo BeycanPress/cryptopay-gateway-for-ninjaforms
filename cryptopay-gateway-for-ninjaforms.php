@@ -11,17 +11,17 @@ defined('ABSPATH') || exit;
 
 /**
  * Plugin Name: CryptoPay Gateway for Ninja Forms
- * Version:     1.0.1
+ * Version:     1.0.2
  * Plugin URI:  https://beycanpress.com/cryptopay/
  * Description: Adds Cryptocurrency payment gateway (CryptoPay) for Ninja Forms.
  * Author:      BeycanPress LLC
  * Author URI:  https://beycanpress.com
  * License:     GPLv3
  * License URI: https://www.gnu.org/licenses/gpl-3.0.html
- * Text Domain: ninjaforms-cryptopay
+ * Text Domain: cryptopay-gateway-for-ninjaforms
  * Tags: Bitcoin, Ethereum, Crypto, Payment, Ninja Forms
  * Requires at least: 5.0
- * Tested up to: 6.7.1
+ * Tested up to: 6.7
  * Requires PHP: 8.1
 */
 
@@ -29,7 +29,7 @@ defined('ABSPATH') || exit;
 require_once __DIR__ . '/vendor/autoload.php';
 
 define('NINJA_FORMS_CRYPTOPAY_FILE', __FILE__);
-define('NINJA_FORMS_CRYPTOPAY_VERSION', '1.0.1');
+define('NINJA_FORMS_CRYPTOPAY_VERSION', '1.0.2');
 define('NINJA_FORMS_CRYPTOPAY_KEY', basename(__DIR__));
 define('NINJA_FORMS_CRYPTOPAY_URL', plugin_dir_url(__FILE__));
 define('NINJA_FORMS_CRYPTOPAY_DIR', plugin_dir_path(__FILE__));
@@ -47,10 +47,6 @@ function nfCryptoPayRegisterModels(): void
 }
 
 nfCryptoPayRegisterModels();
-
-add_action('init', function (): void {
-    load_plugin_textdomain('ninjaforms-cryptopay', false, basename(__DIR__) . '/languages');
-});
 
 add_action('plugins_loaded', function (): void {
     nfCryptoPayRegisterModels();

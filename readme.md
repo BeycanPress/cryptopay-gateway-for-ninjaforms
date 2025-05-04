@@ -1,21 +1,16 @@
 ## Cryptocurrency Payment Gateway for Ninja Forms by CryptoPay
 
-First of all, we would like to point out that this plugin is not a standalone plugin. This plugin is a **<a href="https://beycanpress.com/cryptopay/?utm_source=github&utm_medium=cryptopay_ninja-forms">cryptocurrency payment gateway for Ninja Forms</a>**. In other words, users who want to sell courses with cryptocurrency payments can use WordPress and Ninja Forms. However, this plugin is a plugin for CryptoPay and a cryptocurrency payment gateway for Ninja Forms. So it's actually CryptoPay, which is the main plugin that handles cryptocurrency payments for WordPress. Therefore, users must have both plugins.
+### What does this plugin do?
 
-Thanks to this plugin, you can receive **<a href="https://beycanpress.com/cryptopay/?utm_source=github&utm_medium=cryptopay_ninja-forms">cryptocurrency payments</a>** from many Blockchain networks, especially Bitcoin, Ethereum, Solana, and sell paid courses with cryptocurrencies on your WordPress site with the Ninja Forms plugin.
+As blockchain technology and digital currencies continue to grow in popularity, more creators and businesses are exploring ways to accept crypto payments. If you're using Ninja Forms on your WordPress site and want to receive cryptocurrency directly—without involving third-party payment gateways—this plugin is the perfect solution.
 
-What is CryptoPay? (Click and watch video)
+This add-on lets you seamlessly integrate a decentralized, zero-fee crypto payment option into your Ninja Forms setup using CryptoPay.
 
-[![Cryptocurrency payment gateway for WordPress](https://img.youtube.com/vi/3vaoFL4XG10/0.jpg)](https://www.youtube.com/watch?v=3vaoFL4XG10)
-<br>
+### How does it work?
 
-Review CryptoPay Lite: **<a href="https://wordpress.org/plugins/cryptopay-wc-lite/">Cryptocurrency payment gateway for Ninja Forms</a>**
+This plugin works as an extension of the CryptoPay system, so you’ll need to have either the free (Lite) or the paid (Premium) version of CryptoPay installed and activated on your WordPress site. You'll also need Ninja Forms to be active.
 
-Review CryptoPay Premium: **<a href="https://beycanpress.com/cryptopay/?utm_source=github&utm_medium=cryptopay_ninja-forms">Cryptocurrency payments for WooCommerce</a>**
-
-Review Ninja Forms: **<a href="https://wordpress.org/plugins/ninja-forms/">Ninja Forms</a>**
-
-See **<a href="https://cryptopay.beycanpress.net/" target="_blank">Demo</a>**
+Once everything is in place, go to the payment settings within Ninja Forms and activate CryptoPay as your payment method. After that, you can start accepting cryptocurrency payments directly through your forms—effortlessly and securely, as shown in the screenshots below.
 
 ### Usage
 

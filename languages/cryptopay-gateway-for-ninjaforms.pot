@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CryptoPay Gateway for Ninja Forms\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-24 02:58+0000\n"
+"POT-Creation-Date: 2025-04-10 06:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -13,10 +13,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.6.7; wp-6.4.3\n"
-"X-Domain: ninjaforms-cryptopay"
+"X-Loco-Version: 2.7.1; wp-6.7.2\n"
+"X-Domain: cryptopay-gateway-for-ninjaforms"
 
-#: app/Field.php:147
+#: app/Field.php:149
 msgid ""
 "A payment has already been made for this form, but the form has not been "
 "sent. Therefore please only submit the form."
@@ -30,6 +30,10 @@ msgstr ""
 msgid "BeycanPress LLC"
 msgstr ""
 
+#. Name of the plugin
+msgid "CryptoPay Gateway for Ninja Forms"
+msgstr ""
+
 #. Author URI of the plugin
 msgid "https://beycanpress.com"
 msgstr ""
@@ -38,18 +42,14 @@ msgstr ""
 msgid "https://beycanpress.com/cryptopay/"
 msgstr ""
 
-#. Name of the plugin
-msgid "CryptoPay Gateway for Ninja Forms"
-msgstr ""
-
 #: app/Loader.php:21
 msgid "Ninja Forms Transactions"
 msgstr ""
 
-#: app/Field.php:148
+#: app/Field.php:150
 msgid "Payment completed successfully."
 msgstr ""
 
-#: app/Field.php:168
+#: app/Field.php:170
 msgid "Payment is not verified. Sending form has been aborted."
 msgstr ""
