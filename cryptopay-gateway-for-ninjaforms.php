@@ -21,7 +21,7 @@ defined('ABSPATH') || exit;
  * Text Domain: cryptopay-gateway-for-ninjaforms
  * Tags: Bitcoin, Ethereum, Crypto, Payment, Ninja Forms
  * Requires at least: 5.0
- * Tested up to: 6.7
+ * Tested up to: 6.8
  * Requires PHP: 8.1
 */
 
