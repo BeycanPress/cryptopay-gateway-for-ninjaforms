@@ -15,7 +15,7 @@ Cryptocurrency Payment Gateway for Ninja Forms, Cryptocurrency payments for Word
 
 ### Cryptocurrency Payment Gateway for Ninja Forms by CryptoPay
 
-As blockchain technology and cryptocurrency adoption continue to rise, more businesses, freelancers, and creators are looking for efficient ways to accept digital payments. With the CryptoPay plugin, you can effortlessly accept crypto payments through Ninja Forms on your WordPress site—no need for third-party processors or transaction fees.
+As blockchain technology and cryptocurrency adoption continue to rise, more businesses, freelancers, and creators are looking for efficient ways to accept digital payments. With the CryptoPay plugin, you can effortlessly accept crypto payments through Ninja Forms on your WordPress site—no need for third-party processors or paying commissions.
 
 CryptoPay delivers a truly decentralized, non-custodial, and fee-free payment system, fully integrated with Ninja Forms. Whether you're selling digital products, offering services, or collecting donations, enabling crypto payments on your forms takes just a few simple steps.
 
