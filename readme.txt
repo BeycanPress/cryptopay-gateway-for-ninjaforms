@@ -4,8 +4,8 @@ Tags: Bitcoin, Ethereum, Crypto, Payment, Ninja Forms
 Requires at least: 5.0
 Tested up to: 6.8
 Requires PHP: 8.1
-Stable Tag: 1.0.2
-Version: 1.0.2
+Stable Tag: 1.0.3
+Version: 1.0.3
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -38,20 +38,9 @@ Supported cryptocurrencies include Bitcoin, Ethereum (and all EVM-compatible net
 = Usage =
 
 * First set calculation prices in your form elements.
-![Screenshot-1](https://i.ibb.co/YN8xmsY/Screenshot-1.png)
-
 * Open calculation in Advanced and create a total calculation
-![Screenshot-2](https://i.ibb.co/tQjb81g/Screenshot-2.png)
-![Screenshot-3](https://i.ibb.co/c10Ddbs/Screenshot-3.png)
-![Screenshot-4](https://i.ibb.co/WkmprTM/Screenshot-4.png)
-
 * Add CryptoPay or CryptoPay Lite to your form from the Field field
-![Screenshot-5](https://i.ibb.co/CJzZKfz/Screenshot-5.png)
-
 * Enter the total value set in the calculation in the default value section of the field alerts
-![Screenshot-6](https://i.ibb.co/Bq47ymD/Screenshot-6.png)
-![Screenshot-7](https://i.ibb.co/KXmjLsw/Screenshot-7.png)
-
 * That's it, now you are ready to receive cryptocurrency payments from your form.
 
 = Privacy notices =
@@ -73,6 +62,9 @@ You can easily translate with Loco translate.
 3. Enjoy.
 
 == Changelog ==
+
+= 1.0.3 =
+* Fixed: _load_textdomain_just_in_time early call
 
 = 1.0.1 =
 * Fixed: Text domain warning.

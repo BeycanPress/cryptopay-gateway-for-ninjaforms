@@ -17,13 +17,15 @@ class Loader
     {
         Helpers::registerIntegration('ninjaforms');
 
-        Helpers::createTransactionPage(
-            esc_html__('Ninja Forms Transactions', 'cryptopay-gateway-for-ninjaforms'),
-            'ninjaforms',
-            10,
-            [],
-            ['orderId']
-        );
+        add_action('init', function (): void {
+            Helpers::createTransactionPage(
+                esc_html__('Ninja Forms Transactions', 'cryptopay-gateway-for-ninjaforms'),
+                'ninjaforms',
+                9,
+                [],
+                ['orderId']
+            );
+        });
 
         Hook::addAction('payment_finished_ninjaforms', [$this, 'paymentFinished']);
         Hook::addFilter('edit_config_data_ninjaforms', [$this, 'disableReminderEmail']);
@@ -71,6 +73,7 @@ class Loader
     public function registerFields(array $fields): array
     {
         $field = new Field();
+        /** @disregard */
         $fields[$field->get_name()] = $field;
 
         return $fields;
@@ -94,6 +97,7 @@ class Loader
     public function registerGateways(array $gateways): array
     {
         $gateway = new Gateway();
+        /** @disregard */
         $gateways[$gateway->get_slug()] = $gateway;
 
         return $gateways;
